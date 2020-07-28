@@ -45,14 +45,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if menu.stmt %}active{% endif %}" 
-                           href="{% if menu.stmt %}#{% else %}/sentiment{% endif %}">감성분석</a>
+                        href="{% if menu.stmt %}#{% else %}/sentiment{% endif %}">감성분석</a>
                     </li>
-                    <!-- li class="nav-item">
-                        <a class="nav-link {% if menu.clsf %}active{% endif %}" 
-                           href="{% if menu.clsf %}#{% else %}/classification{% endif %}">분류</a>
-                    </li> -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle {% if menu.clsf %}active{% endif %}" data-toggle="dropdown" href="#">분류</a>
+                        <a class="nav-link dropdown-toggle {% if menu.clsf %}active{% endif %}" 
+                           data-toggle="dropdown" href="#">분류</a>
                         <div class="dropdown-menu">
                         <a class="dropdown-item" href="/classification_iris">아이리스 분류</a>
                         <a class="dropdown-item" href="/classification">이미지 분류</a>
@@ -60,15 +57,15 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if menu.clst %}active{% endif %}" 
-                           href="{% if menu.clst %}#{% else %}/clustering{% endif %}">군집화</a>
+                        href="{% if menu.clst %}#{% else %}/clustering{% endif %}">군집화</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">멤버</a>
+                        <a class="nav-link dropdown-toggle {% if menu.user %}active{% endif %}" data-toggle="dropdown" href="#">팀 멤버</a>
                         <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">변준현</a>
-                        <a class="dropdown-item" href="#">오주현</a>
-                        <a class="dropdown-item" href="#">김민지</a>
-                        <a class="dropdown-item" href="#">김소희</a>
+                        <a class="dropdown-item" href="/member/변준현?nickname=Team Vison 조장">변준현</a>
+                        <a class="dropdown-item" href="/member/오주현">오주현</a>
+                        <a class="dropdown-item" href="/member/김민지">김민지</a>
+                        <a class="dropdown-item" href="/member/김소희">김소희</a>
                         </div>
                     </li>
                 </ul>
